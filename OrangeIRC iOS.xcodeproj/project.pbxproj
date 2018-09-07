@@ -64,6 +64,7 @@
 /* Begin PBXFileReference section */
 		662333422142527800001CCD /* OrangeIRCCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OrangeIRCCore.framework; path = Carthage/Build/iOS/OrangeIRCCore.framework; sourceTree = "<group>"; };
 		662333432142527800001CCD /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		6623334B2142C61F00001CCD /* OrangeIRC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OrangeIRC.png; sourceTree = "<group>"; };
 		667EDB192142446D0029BE48 /* OrangeIRC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeIRC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		667EDB552142457C0029BE48 /* ConsoleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleTableViewController.swift; sourceTree = "<group>"; };
 		667EDB592142457D0029BE48 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +143,7 @@
 				66E004F021424A5D00911511 /* LICENSE */,
 				66E004ED21424A5D00911511 /* README.md */,
 				66E004EF21424A5D00911511 /* TODO.md */,
+				6623334B2142C61F00001CCD /* OrangeIRC.png */,
 				66E004EB21424A4C00911511 /* Icons */,
 				66E004EA21424A4C00911511 /* Screenshots */,
 				667EDB1B2142446D0029BE48 /* OrangeIRC */,
