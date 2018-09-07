@@ -1,0 +1,4 @@
+framework module OrangeIRCCore {
+    header "OrangeIRCCore-Swift.h"
+    requires objc
+}
