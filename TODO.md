@@ -11,3 +11,7 @@
 - Make sure all APIs have Server so we don’t have rooms with the same name being an issue.
 - Being kicked from server vs kicked from channel
 - Message in console saying we are connecting
+- List of suggested server hosts
+- Option to send raw text to server
+- Console log message for disconnects
+- Properly scroll console to bottom
