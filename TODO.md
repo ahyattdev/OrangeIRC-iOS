@@ -15,3 +15,5 @@
 - Option to send raw text to server
 - Console log message for disconnects
 - Properly scroll console to bottom
+- If server delegate methods are called before the app sets serverDelegate some calls could
+be missed completely.

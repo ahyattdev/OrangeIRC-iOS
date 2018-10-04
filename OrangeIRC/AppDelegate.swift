@@ -30,15 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ServerDelegate, UITextFie
     static let splitView = UISplitViewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-        AppDelegate.splitView.delegate = self
-        
-        AppDelegate.splitView.preferredDisplayMode = .allVisible
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        
-        window!.rootViewController = AppDelegate.splitView
-        
-        window!.tintColor = UIColor.orange
+        ServerManager.shared.serverDelegate = self
         
         let placeholder = UITableViewController(style: .grouped)
         let label = UILabel()
@@ -52,7 +44,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ServerDelegate, UITextFie
             UINavigationController(rootViewController: placeholder)
         ]
         
-        ServerManager.shared.serverDelegate = self
+        AppDelegate.splitView.delegate = self
+        
+        AppDelegate.splitView.preferredDisplayMode = .allVisible
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        window!.rootViewController = AppDelegate.splitView
+        
+        window!.tintColor = UIColor.orange
         
         window!.makeKeyAndVisible()
         
