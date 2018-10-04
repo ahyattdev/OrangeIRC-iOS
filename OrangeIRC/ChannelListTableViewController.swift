@@ -99,7 +99,7 @@ class ChannelListTableViewController : UITableViewController {
         if let dequeuedCell = tableView.dequeueReusableCell(withIdentifier: ID) as? RightDetailTextViewCell {
             cell = dequeuedCell
         } else {
-            cell = Bundle.main.loadNibNamed(ID, owner: self, options: nil)!.first as! RightDetailTextViewCell
+            cell = (Bundle.main.loadNibNamed(ID, owner: self, options: nil)!.first as! RightDetailTextViewCell)
         }
         
         let channelData = channelList[indexPath.row]
