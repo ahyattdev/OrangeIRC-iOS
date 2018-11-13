@@ -24,7 +24,7 @@ class RoomTableViewController : UIViewController, UITableViewDelegate, UITableVi
     
     let detailButton = UIBarButtonItem(title: localized("DETAILS"), style: .plain, target: nil, action: #selector(showRoomInfo))
     
-    var toolbar: RoomToolbar!
+    //var toolbar: RoomToolbar!
     
     var tableView: UITableView!
     
@@ -57,7 +57,7 @@ class RoomTableViewController : UIViewController, UITableViewDelegate, UITableVi
     override func loadView() {
         super.loadView()
         
-        toolbar = RoomToolbar(room: room)
+        //toolbar = RoomToolbar(room: room)
         tableView = UITableView(frame: CGRect.zero, style: .plain)
         
         tableView.delegate = self
@@ -69,15 +69,15 @@ class RoomTableViewController : UIViewController, UITableViewDelegate, UITableVi
         tableView.estimatedRowHeight = 44
         
         view.addSubview(tableView)
-        view.addSubview(toolbar)
+        //view.addSubview(toolbar)
         
-        let leading = NSLayoutConstraint(item: toolbar, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1.0, constant: 0)
+        //let leading = NSLayoutConstraint(item: toolbar, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1.0, constant: 0)
         
-        let trailing = NSLayoutConstraint(item: toolbar, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1.0, constant: 0)
+        //let trailing = NSLayoutConstraint(item: toolbar, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1.0, constant: 0)
         
-        toolbar.bottom = NSLayoutConstraint(item: toolbar, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: 0)
+        //toolbar.bottom = NSLayoutConstraint(item: toolbar, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: 0)
         
-        view.addConstraints([leading, trailing, toolbar.bottom])
+        //view.addConstraints([leading, trailing, toolbar.bottom])
         
         let tvTop = NSLayoutConstraint(item: tableView, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0)
         let tvBottom = NSLayoutConstraint(item: tableView, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: 0)
@@ -89,8 +89,8 @@ class RoomTableViewController : UIViewController, UITableViewDelegate, UITableVi
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        toolbar.updateConstraints()
-        toolbar.becomeFirstResponder()
+        //toolbar.updateConstraints()
+        //toolbar.becomeFirstResponder()
         registerKeyboardNotifications()
     }
     
@@ -208,7 +208,7 @@ class RoomTableViewController : UIViewController, UITableViewDelegate, UITableVi
     }
     
     @objc func keyboardWillHide(notification: NSNotification) {
-        tableView.contentInset.bottom = toolbar.frame.height
+        //tableView.contentInset.bottom = toolbar.frame.height
         tableView.scrollIndicatorInsets = tableView.contentInset
     }
 

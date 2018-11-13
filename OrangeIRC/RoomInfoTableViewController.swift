@@ -38,8 +38,8 @@ class RoomInfoTableViewController : UITableViewController {
         super.viewDidLoad()
         
         if let channel = room as? Channel, let nav = navigationController {
-            let searchResultsController = UsersSearchResultsController(channel, navigationController: nav)
-            tableView.tableHeaderView = searchResultsController.searchController.searchBar
+            let searchController = UISearchController(searchResultsController: UsersSearchResultsController(channel, navigationController: nav))
+            navigationItem.searchController = searchController
         }
         
         

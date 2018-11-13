@@ -17,3 +17,8 @@
 - Properly scroll console to bottom
 - If server delegate methods are called before the app sets serverDelegate some calls could
 be missed completely.
+- Can't send emojis (tested on iPad on Freenode), was a different issue, shortly after joining.
+- About page so people with just the app know what it’s about.
+- Time in room view is truncated, iPad, vertial orientation.
+- Crash on iPad when there’s no keyboard bar.
+- Reenable toolbar
